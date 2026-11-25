@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Lista de tarefas</title>
+</head>
+<body>
+    <main>
+        <h1>Minhas tarefas</h1>
+
+        <form action="" id="form" class="add-form">
+            <div id="add-form">
+                <input type="text" id="input-task" placeholder="Crie uma nova tarefa..." class="input-task">
+                <button type="button" id="add-task" onclick="addTask(event)">+</button>
+            </div>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tarefa</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Título da Tarefa</td>
+                    <td>
+                        <select>
+                            <option value="pendente">Pendente</option>
+                            <option value="em progresso">Em progresso</option>
+                            <option value="concluida">Concluída</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button class="btn-action edit"><img src="images/edit.png" alt="editar" width="30px"></button>
+                        <button class="btn-action delete"><img src="images/delete.png" alt="excluir" width="30px"></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+</html>
